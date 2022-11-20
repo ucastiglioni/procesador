@@ -1,0 +1,30 @@
+
+
+spring:
+  application:
+    name: procesador
+  datasource:
+    driver-class-name: com.microsoft.sqlserver.jdbc.SQLServerDriver
+    username: sa
+    password: max
+    url: "jdbc:sqlserver://localhost;encrypt=true;servicename=MSSQLSERVER01;user=sa;password=max;DatabaseName=ING_TEST;TrustServerCertificate=True;"
+
+  jpa:
+    show-sql: true
+    defer-datasource-initialization: true
+    hibernate:
+      ddl-auto: none
+
+    database-platform: org.hibernate.dialect.SQLServerDialect
+
+#    logging:
+#      level:
+#        org.springframework.web: ALL
+#        com.yiibai: DEBUG
+#      pattern:
+#        console: "%d{yyyy-MM-dd HH:mm:ss} - %msg%n"
+#        file: "%d{yyyy-MM-dd HH:mm:ss} [%thread] %-5level %logger{36} - %msg%n"
+#      file-name: _logs/procesador_log.txt
+#      logback:
+#        max-file-size: 1MB
+
